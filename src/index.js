@@ -15,13 +15,13 @@ const min = 1;
 const max = 123;
 
 const foxItem = ()=>{
-  let random = Math.floor(Math.random()* (max - min) + min);
+  let random = ()=> Math.floor(Math.random()* (max - min) + min);
   const div = document.createElement('div');
   div.className = 'fox-item';
 
   const img = document.createElement('img');
   img.className = "fox-image";
-  img.src = `https://randomfox.ca/images/${random}.jpg`;
+  img.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
   img.alt = "";
 
   div.appendChild(img);
