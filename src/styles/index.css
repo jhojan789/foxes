@@ -26,16 +26,26 @@
 
 div#button-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
   margin-bottom: 40px;
+  row-gap: 20px;
+
 }
 
 button#fox-add {
   padding: 10px;
+  width: 100px;
   background-color: #8fb9de;
   cursor: pointer;
 }
-
+button#fox-clear {
+  padding: 10px;
+  background-color: rgb(216, 94, 94);
+  cursor: pointer;
+  width: 100px;
+}
 #foxes-container {
   display: flex;
   justify-content: center;
