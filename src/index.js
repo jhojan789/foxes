@@ -1,5 +1,5 @@
 import './styles/index.css';
-
+import {registerImage} from './utils/lazy';
 {/* <div class="fox-item">
         <img 
           class="fox-image"
@@ -32,6 +32,7 @@ const foxItem = ()=>{
 const addFox = () => {
   const foxImg = foxItem();
   foxContainer.append(foxImg);
+  registerImage(foxImg);
   
 }
 
